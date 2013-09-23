@@ -14,8 +14,8 @@ Instructions
 upload_from_latitude.py <location_history.json> <access> <secret>
 ```
 
-(4.1 You may need to install oauth2 in your python environment. simply
+4.1 You may need to install oauth2 in your python environment. simply run
 ```
-run easy_install oauth2
+easy_install oauth2
 ```
-in a shell)
+in a shell
