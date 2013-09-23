@@ -49,7 +49,7 @@ def upload_points_to_openpaths(points, access, secretc):
             request = urllib2.Request(URL)
             request.headers = build_auth_header(URL, 'POST', access, secret)
             param = {'points': json.dumps((point, ))}
-            print('uploading %s...' % param),
+            print('[%05d] uploading %s...' % (success + failure, param)),
             connection = urllib2.urlopen(request, urllib.urlencode(param))
             o_data = json.loads(''.join(connection.readlines()))
             success += 1
